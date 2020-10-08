@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Chat App</a>  
+</nav>
+<div class="container">
+  <div class="row ">
+    <div class="col-md-4 offset-md-4">
+      <h2 class="form-signin-heading text-center py-4">Sign Up </h2>
+  
+      <label for="inputFirstName" class="sr-only">FirstName</label>  
+      <input type="text" id="inputFirstName" class="form-control" [(ngModel)]="firstName" placeholder="FirstName" required
+        autofocus>
+        <br>
+      <label for="inputLastName" class="sr-only">LastName</label>
+      <input type="text" id="inputLastName" class="form-control" [(ngModel)]="lastName" placeholder="LastName" required>
+      <br>
+      <label for="inputMobile" class="sr-only">Mobile</label>
+      <input type="number" id="inputMobile" class="form-control" [(ngModel)]="mobile" placeholder="Mobile" required>
+      <br> 
+      <label for="inputMobile" class="sr-only">Gender</label>
+      <input type="text" id="inputMobile" class="form-control" [(ngModel)]="gender" placeholder="Gender" required>
+      <br> 
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" [(ngModel)]="email" placeholder="Email address" required>
+      <br>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" [(ngModel)]="password" placeholder="Password"
+        required>
+      <br>
+      <label for="inputPassword" class="sr-only">AuthKey</label>
+      <textarea type="password" id="AuthKey" class="form-control" [(ngModel)]="apiKey" placeholder="API Key"
+        required></textarea>
+        <br>
+        <div class="text-center ">
+            <button class="btn  btn-default mr-1" type="button" (click)="goToSignIn()">Sign In</button>
+            <button class="btn  btn-primary" type="button" (click)="signupFunction()">Sign Up</button>
+        
+          </div>
+     
+    </div>
+  
+    <div class="col-sm"></div>
+  
+  </div>
+</div>

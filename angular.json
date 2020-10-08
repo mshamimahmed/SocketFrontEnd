@@ -94,7 +94,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+           
+            ]
           }
         },
         "lint": {
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Socket-front"
+    }
+  },
+  "defaultProject": "Socket-front",
+  "cli": {
+    "analytics": "401927b0-2fde-4904-8a72-c9baaf2569fb"
+  }
 }
